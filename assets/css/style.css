@@ -1,0 +1,274 @@
+/* Body */
+
+* {
+  font-family: 'Kanit', sans-serif;
+}
+
+body {
+  background-color: #3442dd;
+}
+
+/* Navbar logo Designing Start .....*/
+.header_logo {
+  border: none;
+  position: relative;
+  width: 200px;
+  height: 73px;
+  padding: 0;
+  z-index: 2;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+  -webkit-mask-size: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateY(8px)
+ }
+ 
+ .header_logo:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0px 0 0 0 white;
+  transition: all 2s ease;
+ }
+ 
+ .header_logo:hover:after {
+  box-shadow: 0px -13px 56px 12px #ffffffa6;
+ }
+ 
+ .header_logo span {
+  position: absolute;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 800;
+  left: 50%;
+  top: 39%;
+  letter-spacing: 1px;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  color: rgb(236, 236, 240);
+  transition: all 2s ease;
+ }
+ 
+ .header_logo:hover span {
+  color: white;
+ }
+ 
+ .header_logo:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: navy;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s ease;
+ }
+ 
+ .header_logo:hover:before {
+  width: 100%;
+ }
+ 
+ /* Navbar logo Designing end............. */
+
+
+
+/* Nav Bar */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+a:hover {
+  color: #00eaff;
+}
+
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.navbar .menu {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .highlight {
+  display: block;
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+.highlight {
+  background-color: #0ef;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2s ease;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.highlight:hover {
+  transform: scale(1.05);
+  color: #000;
+}
+
+.highlight:active {
+  transform: scale(0.95);
+  transition-duration: .5s;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  width: 250px;
+  height: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+}
+
+.dropdown-menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-menu .highlight {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-menu.open {
+  height: 325px;
+  width: 100%;
+  transition-duration: .8s;
+  max-width: 100%;
+  left: 0; 
+  right: 0;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+height: 100vh;
+background-color: transparent;
+}
+
+/* Nav Bar Ends */
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .navbar .nav ul {
+      display: none;
+  }
+  
+  .navbar .menu {
+      display: flex;
+  }
+  
+  .navbar .menu i {
+      display: inline-block;
+  }
+  
+  .navbar .highlight {
+      display: none;
+  }
+  
+  .dropdown-menu {
+      display: block;
+  }
+  
+  .dropdown-menu .highlight {
+      display: block;
+      margin-top: 1rem;
+  }
+}
+
+
+div.scroll-Images {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-Images img {
+  padding: 10px;
+  height: 50vh;
+  width: 100%;
+  overscroll-behavior-inline: contain;
+  border-radius: 20px;
+  border-bottom: none; 
+}
+
+.scroll-Images::-webkit-scrollbar {
+ 
+  background:linear-gradient(80deg,#f72585,#b5179e,#4cc9f0);
+  height: 5px;
+
+}
+
+.scroll-Images img:hover{
+  transform: scale(0.9);
+  filter: brightness(100%);
+  transition: 0.5s ease-in-out;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+
