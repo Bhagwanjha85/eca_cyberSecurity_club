@@ -5,197 +5,369 @@
         <meta charset="UTF-8">
         <meta name="author" content="Bhagwan Jha" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-            
         <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://kit.fontawesome.com/e6b8371d90.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
         <link rel="icon" href="assets/logos/logo.png">
-
         <title>ECA_CyberSecurity_Club</title>
 
     </head>
 
     <body>
 
-        <!-- Nav Bar -->
 
-        <header class="header" style="background-image: url('assets/logos/logo.jpg');">
-            <nav>
-                <a href="#" class="logo_text"><img src="assets/logos/logo.png" style="width:90px; height: 60px;"
-                        alt="Logo">
-                </a>
+        <div class="right_toggle_button">
 
-                <div class="nav-links" id="navLinks">
-                    <i class="fa fa-times" onclick="hideMenu()"></i>
+            <!-- Nav Bar -->
 
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="events.html">EVENTS</a></li>
-                        <li><a href="member.html">Team</a></li>
-                        <li><a href="achievements.html">ACHIEVEMENTS</a></li>
-                    </ul>
+            <header class="header" style="background-image: url('assets/logos/logo.jpg'); ">
+
+                <nav>
+                    <a href="index.html" class="logo_text"><img src="assets/logos/logo.png"
+                            style="width:90px; height: 60px;" alt="Logo">
+                    </a>
+
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="events.html">EVENTS</a></li>
+                            <li><a href="teams.html">TEAM</a></li>
+                            <li><a href="achievements.html">ACHIEVEMENTS</a></li>
+                            <li><a href="login.html">SIGN UP
+
+                                </a></li>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+
+                </nav>
+
+                <div class="text-box">
+                    <h1>Cyber Security Club </h1>
+                    <p>Join the Cyber Security Club of GEC Ajmer as we explore new cutting edge technology.</p>
+                    <a href="about.html" class="hero-btn">VISIT TO KNOW MORE</a>
                 </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </header>
+        </div>
 
-            </nav>
-            <div class="text-box">
-                <h1>Cyber Security Club </h1>
-                <p>Join the Cyber Security Club of GEC Ajmer as we explore new cutting edge technology.</p>
-                <a href="about.html" class="hero-btn">VISIT TO KNOW MORE</a>
+
+
+        <!--Banner blog-->
+
+        <div onload="change()">
+
+            <input type="radio" name="active" id="radio-1">
+            <input type="radio" name="active" id="radio-2">
+            <input type="radio" name="active" id="radio-3">
+            <input type="radio" name="active" id="radio-4">
+            <input type="radio" name="active" id="radio-5">
+
+            <div class="slider-container">
+                <div class="images-container">
+                    <img src="assets/events_banner/banner1.png" alt="nature">
+                    <img src="assets/events_banner/banner2.jpg" alt="nature">
+                    <img src="assets/events_banner/banner2.jpg" alt="nature">
+                    <img src="assets/events_banner/banner3.jpg" alt="nature">
+                    <img src="assets/events_banner/banner4.jpg" alt="nature">
+                </div>
+
             </div>
-        </header>
+
+            <div class="control-indicators">
+                <label for="radio-1" class="indicator indicator1"></label>
+                <label for="radio-2" class="indicator indicator2"></label>
+                <label for="radio-3" class="indicator indicator3"></label>
+                <label for="radio-4" class="indicator indicator4"></label>
+                <label for="radio-5" class="indicator indicator5"></label>
+            </div>
+        </div>
+        <br>
+        </div>
 
 
-        <div class="bannerhover">
-            <div class="bannercard">
-                <p><span> <img src="assets/events_banner/banner1.png" style="width: 100%;  height: 254px;"
-                            alt="latest_announcement"></span></p>
-                <p><span><img src="assets/events_banner/banner2.jpg" style="width: 100%;   height: 254px;"
-                            alt="banner2"></span></p>
-                <p><span><img src="assets/events_banner/banner3.jpg" style="width: 100%;  height: 254px;"
-                            alt="banner3"></span></p>
-                <p><span><img src="assets/events_banner/banner4.jpg" style="width: 100%;  height: 254px;"
-                            alt="banner4"></span></p>
+        <div style="background-color: rgba(0, 0, 0, 0.922);">
 
+
+            <div class="nnotice_board"
+                style="display: flex; align-items: center; justify-content: center; padding: 20px; ">
+                <img src="assets/icons/downarrow.png" style="width: 40px;" />
+                <h2 style="color:#fff;
+            ; font-size: 30px; font-family: Cascadia Code, monospace;">&nbsp;Notice Board</h2>
+            </div>
+
+
+
+            <!--student Notice board-->
+            <section class="notice-container">
+
+                <div class="notice-area">
+                    <div class="first-box">
+
+                        <div class="notice-heading">
+                            <h4 class="line">
+                                <span style=" font-family: Cascadia Code, monospace;">Event Notice Board</span>
+                                <br><br>
+                                <hr>
+
+                            </h4>
+                        </div>
+
+                        <div class="second-box">
+
+                            <div class="third-box">
+
+
+                                <marquee direction="up" scrollamount="5px" onmouseover="this.stop();"
+                                    onmouseout="this.start();">
+
+                                    <div>
+                                        <fieldset class="alert-box simple-alert">
+                                            <legend align="right" class="flash">New Notice</legend>
+
+                                            <a style="text-decoration: none;" href="#">Lorem ipsum dolor sit amet.
+                                                <button>21 feb, 2024</button>
+                                            </a>
+                                        </fieldset>
+                                    </div>
+
+                                    <div>
+                                        <fieldset class="alert-box simple-alert">
+                                            <legend align="right" class="flash">New Notice</legend>
+                                            <a style="text-decoration: none;" href="#">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                                                sapiente
+                                                quam
+                                                delectus illum facere?<button>21 feb,2024</button>
+                                            </a>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="alert-box simple-alert">
+                                        <a style="text-decoration: n one;" href="#">Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Tempore fuga.<button>21 feb,2024</button></a>
+                                    </div>
+                                    <div class="alert-box simple-alert">
+                                        <a style="text-decoration: none;" href="#">Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Minima ab expedita vitae quae quos.<button>21
+                                                feb,2024</button></a>
+                                    </div>
+                                    <div class="alert-box simple-alert">
+                                        <a style="text-decoration: none;" href="#">Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Sed, quis facilis modi placeat nam laborum!<button>21
+                                                feb,2024</button></a>
+                                    </div>
+                                    <div class="alert-box simple-alert">
+                                        <a style="text-decoration: none;" href="#">Lorem ipsum dolor sit, amet
+                                            consectetur
+                                            adipisicing elit. Corrupti, assumenda dicta, sequi.<button>21
+                                                feb,2024</button></a>
+                                    </div>
+                                    <div class="alert-box simple-alert">
+                                        <a style="text-decoration: none;" href="#">Lorem, ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. <button>21 feb,2024</button>
+                                </marquee>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- upcoming event start -->
+
+
+                <div class="upcoming-event-section">
+
+                    <div class="event-header">
+                        <h4 style="font-size: 30px;"><span
+                                style=" font-size: 30px;   font-family: Cascadia Code, monospace;">Upcoming
+                                <span style="font-size: 30px;   font-family: Cascadia Code, monospace;
+                                    ">Events</span>
+                        </h4>
+                        <span class="event-line"></span>
+                    </div>
+
+
+                    <div class="event-body">
+
+
+
+                        <div class="event-box">
+
+                            <div class="time-from">
+                                <div class="date">06 <span style="font-size:12px;">March</span></div>
+                            </div>
+
+                            <div class="event-wrapper"><a href="">
+                                    <h5 class="title"> CyberSecurity Workshop</h5>
+                                    <div class="time">02:00 pm - 04:00 pm</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="event-box">
+
+                            <div class="time-from">
+                                <div class="date">25 <span style="font-size:12px;">March</span></div>
+                            </div>
+
+                            <div class="event-wrapper"><a href="">
+                                    <h5 class="title"> Computer Fundamentals Workshop</h5>
+                                    <div class="time">12:00 pm - 02:00 pm</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="event-box">
+
+                            <div class="time-from">
+                                <div class="date">10 <span style="font-size:12px;">April</span></div>
+                            </div>
+
+                            <div class="event-wrapper"><a href="">
+                                    <h5 class="title">Mern Stack Developer Workshop</h5>
+                                    <div class="time">10:00 am - 01:00 pm</div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <!--Feedback section start-->
+        <div style="background-color: rgba(0, 0, 0, 0.922);">
+
+            <div class="feedback_heading">
+
+                <div class="nnotice_board"
+                    style="display: flex; align-items: center; justify-content: center; padding: 20px; ">
+                    <img src="assets/icons/feedback.png" style="width: 50px;" />
+                    <h2 style="color:white; font-size: 30px; font-family: Cascadia Code, monospace;
+                ">&nbsp;Give Feedback</h2>
+                </div>
+
+                <div class="feedback_shortdesc">
+                    <p>Please share your valuable feedback to us</p>
+                </div>
+
+            </div>
+
+            <div class="feedbox" style="background-image: url(assets/events_banner/banner4.jpg);">
+                <div class="feed">
+                    <form>
+                        <label>Your Name</label><br><br>
+                        <input type="text" name="" class="fname" required="required"><br>
+                        <label>Email</label><br><br>
+                        <input type="email" name="mail" required="required"><br>
+                        <label>Additional Details</label><br><br>
+                        <textarea name="addtional"></textarea><br>
+                        <button type="submit" id="csubmit">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
 
 
-        <!--student Notice board-->
-        <section class="notice-container">
-            <div class="notice-area">
-                <div class="first-box">
-
-                    <div class="notice-heading">
-                        <h4 class="line">
-                            <span>Event Notice Board</span>
-                        </h4>
-                    </div>
-
-                    <div class="second-box">
-
-                        <div class="third-box">
+        <!--Feedback section end-->
+        <div style=" background:linear-gradient(120deg,black,#777777,#fff);">
 
 
-                            <marquee direction="up" scrollamount="5px" onmouseover="this.stop();"
-                                onmouseout="this.start();">
-
-                                <div>
-                                    <fieldset class="alert-box simple-alert">
-                                        <legend align="right" class="flash">New Notice</legend>
-
-                                        <a style="text-decoration: none;" href="#">Lorem, ipsum dolor sit amet
-                                            consectetur adipisicing elit. Assumenda laboriosam ipsa molestiae nihil quos
-                                            culpa magnam dicta est voluptatibus quo! <button>21 feb, 2024</button></a>
-                                    </fieldset>
-                                </div>
-
-                                <div>
-                                    <fieldset class="alert-box simple-alert">
-                                        <legend align="right" class="flash">New Notice</legend>
-                                        <a style="text-decoration: none;" href="#">Lorem ipsum dolor, sit amet
-                                            consectetur adipisicing elit. Temporibus beatae ullam reiciendis sed quasi
-                                            cupiditate illo dolore quia voluptas repellendus.<button>21 feb,
-                                                2024</button></a>
-                                    </fieldset>
-                                </div>
-
-                                <div class="alert-box simple-alert">
-                                    <a style="text-decoration: n one;" href="#">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Aut inventore nobis, voluptate maxime impedit sunt at vero
-                                        reiciendis neque eius.<button>21 feb, 2024</button></a>
-                                </div>
-                                <div class="alert-box simple-alert">
-                                    <a style="text-decoration: none;" href="#">Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Impedit, dicta dolorem! Delectus perferendis quae voluptatem
-                                        ad asperiores ipsa minima qui.<button>21 feb, 2024</button></a>
-                                </div>
-                                <div class="alert-box simple-alert">
-                                    <a style="text-decoration: none;" href="#">Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Eius dolor iure vitae architecto accusantium unde sed adipisci
-                                        eum sint quas? <button>21 feb, 2024</button></a>
-                                </div>
-                                <div class="alert-box simple-alert">
-                                    <a style="text-decoration: none;" href="#">Lorem ipsum, dolor sit amet consectetur
-                                        adipisicing elit. Magni ex vel ut similique id, ad eos quos! Commodi, nesciunt
-                                        alias!<button>21 feb, 2024</button></a>
-                                </div>
-                                <div class="alert-box simple-alert">
-                                    <a style="text-decoration: none;" href="#">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Cupiditate quaerat illum eius voluptate ducimus aut similique
-                                        repellendus assumenda optio voluptatibus? <button>21 feb,2024</button>
-                            </marquee>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- upcoming event start -->
-
-            <div class="upcoming-event-section">
-
-                <div class="event-header">
-                    <h4 style="font-size: 30px;"><span style="color:red; font-size: 30px;">Upcoming <span
-                                style="color:#5599d1; font-size: 30px;">Events</span>
-                    </h4>
-                    <span class="event-line"></span>
-                </div>
-
-
-                <div class="event-body">
-
-
-
-                    <div class="event-box">
-
-                        <div class="time-from">
-                            <div class="date">06 <span style="font-size:12px;">March</span></div>
-                        </div>
-
-                        <div class="event-wrapper"><a href="">
-                                <h5 class="title"> CyberSecurity Workshop</h5>
-                                <div class="time">02:00 pm - 04:00 pm</div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="event-box">
-
-                        <div class="time-from">
-                            <div class="date">25 <span style="font-size:12px;">March</span></div>
-                        </div>
-
-                        <div class="event-wrapper"><a href="">
-                                <h5 class="title"> Computer Fundamentals Workshop</h5>
-                                <div class="time">12:00 pm - 02:00 pm</div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="event-box">
-
-                        <div class="time-from">
-                            <div class="date">10 <span style="font-size:12px;">April</span></div>
-                        </div>
-
-                        <div class="event-wrapper"><a href="">
-                                <h5 class="title">Mern Stack Developer Workshop</h5>
-                                <div class="time">10:00 am - 01:00 pm</div>
-                            </a>
-                        </div>
-                    </div>
+            <div class="fqaContainer">
+                <img src="assets/icons/faq.png" alt="faq">
+                <div class="questions">
+                    <h3>General Questions Frequently Asked Questions?</h3>
+                    <p id="p1" data-target="q1">How Can I Safely Browse The Internet?</p>
+                    <span id="q1"></span>
+                    <p data-target="q2">What Type Frequency Of Alerts And Notifications Will Receive?</p>
+                    <span id="q2"></span>
+                    <p data-target="q3">What Type Frequency Of Alerts And Notifications Will Receive?</p>
+                    <span id="q3"></span>
+                    <p data-target="q4">How Is Our Data Stored And Protected And For How Long?</p>
+                    <span id="q4"></span>
 
                 </div>
             </div>
-        </section>
+        </div>
 
+
+
+        <!--Footer Page Start-->
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <img src="assets/logos/logo.png" class="footer_logo">
+                    <p class="footer_about">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore harum
+                        molestias nesciunt,
+                        doloremque magni aspernatur iste blanditiis, fugiat quaerat accusamus ut, vero tempore.
+                        Fugiat, illum!
+                    </p>
+                </div>
+                <div class="col">
+                    <h3>Office <div class="bottom_line"><span></span></div>
+                    </h3>
+                    <p>Badlya,Ajmer</p>
+                    <p>Rajasthan</p>
+                    <p> ZIP 305025, India</p>
+                    <p class="footer_email">ecajmer@ac.in</p>
+                    <h4>+91 - 0000000000</h4>
+                </div>
+                <div class="col">
+                    <h3>Links <div class="bottom_line"><span></span></div>
+                    </h3>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="teams.html">TEAM MEMBERS</a></li>
+                        <li><a href="#">ACHIEVEMENTS</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Newsletter <div class="bottom_line"><span></span></div>
+                    </h3>
+                    <form>
+                        <ion-icon class="icon" name="mail"></ion-icon>
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><ion-icon class="icon_right"
+                                name="arrow-round-forward"></ion-icon></button>
+                    </form>
+                    <div class="social_icons">
+                        <ion-icon class="social_icon" name="logo-linkedin"></ion-icon>
+                        <ion-icon class="social_icon" name="logo-facebook"></ion-icon>
+                        <ion-icon class="social_icon" name="logo-youtube"></ion-icon>
+                        <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">GECA CyberTeam Ⓒ 2024 - All Rights Reserved</p>
+        </footer>
+        <!--Footer Page end-->
+
+
+
+        <!-- Below Code is used as a chatbot on my thisssss website-->
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger intent="WELCOME" chat-title="IncomeTaxFAQs" agent-id="d7db1bc7-b61e-4571-a4ba-02704df23b18"
+            language-code="en"></df-messenger>
 
 
         <script src="assets/js/script.js"></script>
+        <script src="assets/js/faq.js"></script>
+
 
     </body>
 

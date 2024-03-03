@@ -1,24 +1,54 @@
 
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.922);
+
+}
+
+
 .team_member_container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.922);
+}
+
+.team_member_container h1{
+    text-align: center; 
+    font-size: 40px;
+    font-family: Cascadia Code, monospace; 
+    width: 100%;
+    color:rgb(0 155 0);
+    text-decoration: underline;
 }
 
 .teamcard {
+    margin-top: 40px;
+    margin-bottom: 10px;
     width: 290px;
     min-width:200px;
     height: 254px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #f2f2f3;
+    background-color: rgba(0, 0, 0, 0.922);
     border-radius: 12px;
     box-shadow: inset 5px 5px 10px #a9a9aa77,
                  inset -5px -5px 10px #ffffff7e;
+   }
+
+   .teamcard:hover{
+    transform: scale(1.1);
+    filter: brightness(100%);
+    transition: 0.3s ease-in-out;
    }
    
    .teamcard .img, .team_member_img {
@@ -27,35 +57,46 @@
     aspect-ratio: 1;
     border-radius: 30%;
     background: #f2f2f3;
-    margin-bottom: 0.4em;
-    box-shadow: -5px -5px 8px #ffffff7a, 
-                 5px 5px 8px #a9a9aa7a;
+    margin-bottom: 0.4em; 
+    filter: brightness(60%);
+    filter: grayscale(10%);
+    filter: blur(0.1px);
+           
    }
+
+   .teamcard .img, .team_member_img:hover{
+    transform: scale(1.1);
+    filter: brightness(100%);
+    transition: 0.5s ease-in-out;
+    filter: contrast(100%);
+    box-shadow: 2px 2px 40px 1px rgb(0 155 0);
+}
    
    .teamcard .info {
     text-align: center;
     margin-top: 0.4em;
-    background-color: #41525f;
+    background-color: #777777;
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
    }
    
-   .teamcard .info > span {
+   .teamcard .info >span {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.8em;
    }
    
+   
+
+
    .teamcard a {
     margin-top: 1em;
-    color: #fff;
+    color: #17ea0c;
     text-decoration: none;
-    background-color: #eef1f4;
     padding: .5em 2em;
     border-radius: 0.7em;
    }
    
-
 
    .social_icon{
     gap: 10px;
